@@ -85,7 +85,7 @@ It is okay if your project has more files and directories, but you at least need
 
 To complete the assignment, you must complete the following:
 
-1. Install [Allow CORS Google Chrome Plugin](https://chrome.google.com/webstore/detail/allow-control-allow-origi/nlfbmbojpeacfghkpbjhddihlkkiljbi)
+1. Install [Allow CORS Google Chrome Plugin](https://chrome.google.com/webstore/detail/allow-cors-access-control/lhobafahddgcelffkeicbaginigeejlf?hl=en)
 2. Create a PHP script that runs a GET request on `localhost port 3000` that uses [JSON_decode()](https://www.php.net/manual/en/function.json-decode.php) to grab the file from `{your-ip-address:8080/your-file.json`
 3. Display the raw data on screen to confirm it works (do not skip this step, very important)
 4. Parse the raw data and create a basic interface to allow a user to perform CRUD Actions on the data
