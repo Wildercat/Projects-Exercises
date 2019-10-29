@@ -85,12 +85,15 @@ It is okay if your project has more files and directories, but you at least need
 
 To complete the assignment, you must complete the following:
 
-1. Install [Allow CORS Google Chrome Plugin](https://chrome.google.com/webstore/detail/allow-cors-access-control/lhobafahddgcelffkeicbaginigeejlf?hl=en)
-2. Create a PHP script that runs a GET request on `localhost port 3000` that uses [JSON_decode()](https://www.php.net/manual/en/function.json-decode.php) to grab the file from `{your-ip-address:8080/your-file.json`
-3. Display the raw data on screen to confirm it works (do not skip this step, very important)
-4. Parse the raw data and create a basic interface to allow a user to perform CRUD Actions on the data
-5. Perform CRUD actions on data ([POST, GET, PATCH, DELETE, etc.](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods)) and update the data on the API 8080 webserver via POST.
-6. Confirm data in server(8080) is indeed updated when client updates(3000)
+1. Your PHP project part 1 will become a basic client CRUD app instead of looking at its own data. It will run on `localhost:3000`.
+2. This new PHP project part 2 will exist in a seperate folder and run on MAMP to host MySQL on `localhost:8080`.
+3. You will have 2 servers in seperate folders running at once. One to store the data in a MySQL server, and one to perform CRUD actions and display data.
+4. Install [Allow CORS Google Chrome Plugin](https://chrome.google.com/webstore/detail/allow-cors-access-control/lhobafahddgcelffkeicbaginigeejlf?hl=en) to allow communication across multiple servers.
+5. For the database server, you will create a PHP script for one of your servers that handles CRUD functions and emits data via json_encode() and recieves data via json_decode().
+6. For the data viewer server, you can display the data how you wish, ideally display the raw data on screen to confirm it works (do not skip this step, very important)
+7. Next, parse the raw data and create a basic form interface.
+8. Perform CRUD actions on data ([POST, GET, PATCH, DELETE, etc.](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods)) and update the data on the  database server via POST.
+9. Confirm database server is indeed updated when client server updates
 
 #### Additional Requirements
 
