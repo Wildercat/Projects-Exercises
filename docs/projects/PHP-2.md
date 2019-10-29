@@ -85,7 +85,7 @@ It is okay if your project has more files and directories, but you at least need
 
 To complete the assignment, you must complete the following:
 
-1. Your PHP project part 1 will become a basic client CRUD app instead of looking at its own data. It will run on `localhost:3000`.
+1. Your PHP project part 1 will become a basic client CRUD app instead of looking at its own data. It will run on `localhost:3000` via `php -S localhost:3000`.
 2. This new PHP project part 2 will exist in a seperate folder and run on MAMP to host MySQL on `localhost:8080`.
 3. You will have 2 servers in seperate folders running at once. One to store the data in a MySQL server, and one to perform CRUD actions and display data.
 4. Install [Allow CORS Google Chrome Plugin](https://chrome.google.com/webstore/detail/allow-cors-access-control/lhobafahddgcelffkeicbaginigeejlf?hl=en) to allow communication across multiple servers.
