@@ -4,7 +4,7 @@
 
 Create a webpage that acts as a hub for librarians to know the status of books in their library, and update books and their information
 
-For this project we will be using Composer to generate a Laravel project
+For this project we will be using Composer to generate a Laravel project and adding react to the laravel project to act as components to put onto blades
 
 Learn about how to properly [link a repo created on the command line with an existing repo you created on the GitHub website](https://help.github.com/en/articles/adding-an-existing-project-to-github-using-the-command-line)
 
@@ -12,20 +12,21 @@ Learn about how to properly [link a repo created on the command line with an exi
 
 <!--ts-->
 
-- [Project/Exercise Name](#Laravel-Library)
-- [Description](#Description)
-- [Table of Contents](#table-of-contents)
-- [MVP (Minimum Viable Product)](#MVP)
-  - [Wireframe](#Wireframe)
-  - [Tech Stack](#Tech-Stack)
-- [Process](#process)
-  - [Setup](#Setup)
-  - [Develop](#Develop)
-  - [Deploy](#Deploy)
-- [Requirements](#Requirements)
-  - [Additional Requirements](#Additional-Requirements)
-  - [Stretch Goals](#Stretch-Goals)
-- [Additional Resources](#Additional-Resources)
+* [Project/Exercise Name](#Laravel-Library)
+* [Description](#Description)
+* [Table of Contents](#table-of-contents)
+* [MVP (Minimum Viable Product)](#MVP)
+  + [Wireframe](#Wireframe)
+  + [Tech Stack](#Tech-Stack)
+* [Process](#process)
+  + [Setup](#Setup)
+  + [Develop](#Develop)
+  + [Deploy](#Deploy)
+* [Requirements](#Requirements)
+  + [Additional Requirements](#Additional-Requirements)
+  + [Stretch Goals](#Stretch-Goals)
+* [Additional Resources](#Additional-Resources)
+
   <!--te-->
 
 ### MVP
@@ -50,12 +51,15 @@ By default, the app should let a Librarian maintain a simulated library via a we
 
 ##### Setup:
 
-1. [Create GitHub repo (either online or locally)](../git-instructions.md), for example: `my-app`
+1.[Create GitHub repo (either online or locally)](../git-instructions.md), for example: `my-app` 
+
 2. Create necessary files for application and view in VS Code
+
    - Run shell script to expedite process unless you are using a framework
    - _If you are using a framework, disregard the "Application File Structure" section_
+
 3. Import and route necessary css/js files (E.g. Bootstrap)
-4. Save all and create your first commit to `master`, **then** switch to a dev branch
+4. Save all and create your first commit to `master` , **then** switch to a dev branch
 
 ##### Develop:
 
@@ -68,13 +72,20 @@ By default, the app should let a Librarian maintain a simulated library via a we
 
 ##### Deploy:
 
-1. Create a Pull Request from `dev` into `master`
+1. Create a Pull Request from `dev` into `master` 
 2. Confirm code is up to date and works correctly
 3. Post links to your GitHub repo to the Projects Slack channel
 
 ---
 
 ### Requirements
+
+To set up React.js inside of Laravel
+
+1. `laravel new laravel-library` 
+2. `cd laravel-library` 
+3. `php artisan preset react` 
+4. `npm install && npm run dev` 
 
 To complete the assignment, you must complete the following:
 
@@ -83,9 +94,9 @@ To complete the assignment, you must complete the following:
 
 Users
 
-- user id (string) - this will be the "library card"
-- user name (string)
-- any other info you would like to store that is NOT redundant
+* user id (string) - this will be the "library card"
+* user name (string)
+* any other info you would like to store that is NOT redundant
 
 | user_id (string) | user_name (string) |
 | ---------------- | ------------------ |
@@ -95,10 +106,10 @@ Users
 
 Books
 
-- book id (string) - linked to Google Book API Book ID so we do not actually store the book pdf in our repo
-- user id of user that currently has this book checked out (foreign key)
-- times the book has been checked out (integer)
-- any other info you would like to store that is NOT redundant
+* book id (string) - linked to Google Book API Book ID so we do not actually store the book pdf in our repo
+* user id of user that currently has this book checked out (foreign key)
+* times the book has been checked out (integer)
+* any other info you would like to store that is NOT redundant
 
 | book_id (string) | user_id (foreign key) | number_of_times_checked_out (int) |
 | ---------------- | --------------------- | --------------------------------- |
@@ -111,7 +122,7 @@ Books
 | 235jc7782        | 62hd7gd11             | 3                                 |
 | 1uuid78h3        | null                  | 4                                 |
 
-3. Full CRUD operations should be available for `Users`
+3. Full CRUD operations should be available for `Users` 
 4. Read access should be available for `Books` (it is not possible to perform Create, Update, or Delete functions on the Google Books API) via GET requests
 5. Only save the books in the book table AFTER a user decides to check the book out. (no need to save all the books locally, that's what the API is for)
 6. Use React.js for creating components to put on Laravel Blades.
@@ -121,24 +132,24 @@ Books
 
 #### Additional Requirements
 
-- Website must be responsive
-- Style your app as you wish
-- Use the tools and technologies covered in class to complete your website. To see what we have covered, check the [Class Resources Repo](https://github.com/bootcamp-students/Resources).
-- Your repo should be public so that others can see your code and comment on it.
-  - _**Remember to push to GitHub!**_
-  - Potential employers will view your GitHub profile, so activity is crucial!
+* Website must be responsive
+* Style your app as you wish
+* Use the tools and technologies covered in class to complete your website. To see what we have covered, check the [Class Resources Repo](https://github.com/bootcamp-students/Resources).
+* Your repo should be public so that others can see your code and comment on it.
+  + _**Remember to push to GitHub!**_
+  + Potential employers will view your GitHub profile, so activity is crucial!
 
 #### Stretch Goals
 
-- Create backend archetecture wireframes for use in a potential MVP
-- Create a search bar for querying books from the Google Books API
-- Implement Laravel Auth using composer to create many "Librarians"
-- Add a 'due by date' that keeps track of how long a book has been checked out
-- Add a 'late fee' for books that have been checked out too long that can be modified by the librarian
-- Add a way for a user to 'renew' their checked out book
-- Add a way for users to put a book on hold if someone else has it currently checked out
-- Add a history for the librarians to see a list of all people who checked out a particular book
-- Add any other data to the scheme as long as it is NOT redundant
+* Create backend archetecture wireframes for use in a potential MVP
+* Create a search bar for querying books from the Google Books API
+* Implement Laravel Auth using composer to create many "Librarians"
+* Add a 'due by date' that keeps track of how long a book has been checked out
+* Add a 'late fee' for books that have been checked out too long that can be modified by the librarian
+* Add a way for a user to 'renew' their checked out book
+* Add a way for users to put a book on hold if someone else has it currently checked out
+* Add a history for the librarians to see a list of all people who checked out a particular book
+* Add any other data to the scheme as long as it is NOT redundant
 
 #### If you finish early...
 
@@ -148,11 +159,12 @@ Books
 
 ### Additional Resources
 
-- Ask questions :-)
-- [Class Resources Repo](https://github.com/bootcamp-students/Resources)
-- Learn more about [Good GitHub Practices](https://guides.github.com)
+* Ask questions :-)
+* [Class Resources Repo](https://github.com/bootcamp-students/Resources)
+* Learn more about [Good GitHub Practices](https://guides.github.com)
 
 For more information about CRUD, see these articles:
 
-- [What is CRUD?](https://www.codecademy.com/articles/what-is-crud)
-- [Why is CRUD so Important?](http://trendintech.com/2018/01/19/why-is-crud-so-important-in-computer-programming/)
+* [What is CRUD?](https://www.codecademy.com/articles/what-is-crud)
+* [Why is CRUD so Important?](http://trendintech.com/2018/01/19/why-is-crud-so-important-in-computer-programming/)
+
