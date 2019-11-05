@@ -38,7 +38,7 @@ By default, the app should let a Librarian maintain a simulated library via a we
 #### Wireframe
 
 [Library Wireframes](../wireframes/library) - you do not need to copy these exactly, it's just one of many ideas.
-Remember, this is a back end project, it does not need to look pretty, it needs to work. You can use react to make it nice, but only after you get it working.
+Remember, this is a back end project; it does not need to look pretty, it needs to work. You can use React.js to play around in the front end, but only after you get it working behind the scenes.
 
 #### Tech Stack
 
@@ -54,13 +54,8 @@ Remember, this is a back end project, it does not need to look pretty, it needs 
 
 ##### Setup:
 
-1.[Create GitHub repo (either online or locally)](../git-instructions.md), for example: `my-app` 
-
-2. Create necessary files for application and view in VS Code
-
-   - Run shell script to expedite process unless you are using a framework
-   - _If you are using a framework, disregard the "Application File Structure" section_
-
+1. [Create GitHub repo online](../git-instructions.md), for example: `laravel-library`
+2. Create necessary files for application and view in VS Code via `laravel new library` 
 3. Import and route necessary css/js files (E.g. Bootstrap)
 4. Save all and create your first commit to `master` , **then** switch to a dev branch
 
@@ -118,7 +113,7 @@ To complete the assignment, you must complete the following:
 
 * Create backend archetecture wireframes for use in a potential MVP
 * Create a search bar for querying books from the Google Books API
-* [Use react.js for all front end](https://dev.to/lvtdeveloper/using-react-in-a-laravel-application-8fp)
+* Create a full stack site by [using React.js for all front end](https://dev.to/lvtdeveloper/using-react-in-a-laravel-application-8fp)
 * Implement Laravel Auth using composer to create many "Librarians"
 * Add a 'due by date' that keeps track of how long a book has been checked out
 * Add a 'late fee' for books that have been checked out too long that can be modified by the librarian
@@ -126,7 +121,7 @@ To complete the assignment, you must complete the following:
 * Add a way for users to put a book on hold if someone else has it currently checked out
 * Add a history for the librarians to see a list of all people who checked out a particular book
 * Add any other data to the scheme as long as it is NOT redundant
-* Use react.js as a frontend that communicates with the Laravel library as a REST API.
+* [Use React.js as a frontend that communicates with the Laravel library as a REST API](https://restfulapi.net/)
 
 #### If you finish early...
 
