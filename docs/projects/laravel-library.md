@@ -14,20 +14,20 @@ For site hosting, we will be using Google Cloud
 
 <!--ts-->
 
-* [Project/Exercise Name](#Laravel-Library)
-* [Description](#Description)
-* [Table of Contents](#table-of-contents)
-* [MVP (Minimum Viable Product)](#MVP)
-  + [Wireframe](#Wireframe)
-  + [Tech Stack](#Tech-Stack)
-* [Process](#process)
-  + [Setup](#Setup)
-  + [Develop](#Develop)
-  + [Deploy](#Deploy)
-* [Requirements](#Requirements)
-  + [Additional Requirements](#Additional-Requirements)
-  + [Stretch Goals](#Stretch-Goals)
-* [Additional Resources](#Additional-Resources)
+- [Project/Exercise Name](#Laravel-Library)
+- [Description](#Description)
+- [Table of Contents](#table-of-contents)
+- [MVP (Minimum Viable Product)](#MVP)
+  - [Wireframe](#Wireframe)
+  - [Tech Stack](#Tech-Stack)
+- [Process](#process)
+  - [Setup](#Setup)
+  - [Develop](#Develop)
+  - [Deploy](#Deploy)
+- [Requirements](#Requirements)
+  - [Additional Requirements](#Additional-Requirements)
+  - [Stretch Goals](#Stretch-Goals)
+- [Additional Resources](#Additional-Resources)
 
   <!--te-->
 
