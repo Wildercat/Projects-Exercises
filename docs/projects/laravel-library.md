@@ -13,7 +13,6 @@ For site hosting, we will be using Google Cloud
 ### Table of contents
 
 <!--ts-->
-
 - [Project/Exercise Name](#Laravel-Library)
 - [Description](#Description)
 - [Table of Contents](#table-of-contents)
@@ -28,8 +27,7 @@ For site hosting, we will be using Google Cloud
   - [Additional Requirements](#Additional-Requirements)
   - [Stretch Goals](#Stretch-Goals)
 - [Additional Resources](#Additional-Resources)
-
-  <!--te-->
+<!--te-->
 
 ### MVP
 
