@@ -4,9 +4,11 @@
 
 Create a webpage that acts as a hub for librarians to know the status of books in their library, and update books and their information
 
-For this project we will be using Composer to generate a Laravel project and adding react to the laravel project to act as components to put onto blades
+For this project we will be using Composer to generate a Laravel project, and adding an artisan preset to use React.js in our laravel project to create components to put onto blade.php files
 
-Learn about how to properly [link a repo created on the command line with an existing repo you created on the GitHub website](https://help.github.com/en/articles/adding-an-existing-project-to-github-using-the-command-line)
+You will not be able to host this site on github, but you will still store github versioning online, so to learn about how to properly [link a repo created on the command line with an existing repo you created on the GitHub website, click here](https://help.github.com/en/articles/adding-an-existing-project-to-github-using-the-command-line)
+
+For site hosting, we will be using Google Cloud
 
 ### Table of contents
 
@@ -31,11 +33,12 @@ Learn about how to properly [link a repo created on the command line with an exi
 
 ### MVP
 
-By default, the app should let a Librarian maintain a simulated library via a web interface that is connected to the Google Books API
+By default, the app should let a Librarian maintain a simulated library via a web interface which communicates with the Google Books API to populate book content.
 
 #### Wireframe
 
-[Library Wireframes](../wireframes/library) - you do not need to copy these exactly, its just an idea
+[Library Wireframes](../wireframes/library) - you do not need to copy these exactly, it's just one of many ideas.
+Remember, this is a back end project, it does not need to look pretty, it needs to work. You can use react to make it nice, but only after you get it working.
 
 #### Tech Stack
 
@@ -80,6 +83,20 @@ By default, the app should let a Librarian maintain a simulated library via a we
 
 ### Requirements
 
+*Do not begin using React.js until you have successfully completed the project. This is a back end project; it does not need to look pretty, it needs to work.*
+
+To complete the assignment, you must complete the following:
+
+1. Store a table of library card holders as `users` in your local MySQL database.
+2. Use the [Google Books API](https://developers.google.com/books/docs/v1/getting_started) to generate book content for users to check in and out from the library and to store a table of fetched books as `books` in your local MySQL database. This data should only be updated/fetched as the superuser Librarian
+3. Store a table of checked out books and meta data such as date and number of times checked out as `checkouts` in your local MySQL database.
+3. Implement full CRUD operations.
+4. Implement foreign key relations to correctly store data
+5. Use React.js for creating components to put on Laravel Blades.
+6. Users do not *need* to sign up or be real people, you can simulate this by clicking a "new user" button in the admin interface as a Librarian.
+7. Show all user and book statistics that are saved in database (for example: There are 3 users registered with the library, user "jim" has 2 books checked out: "Algorithms", and "Design Patterns", user "phil" has 0 books checked out, and user "sally" has 1 book checked out: "The Pragmatic Programmer", there are 5 books in the library total, three are checked out, etc.) you can format this data however you'd like, we suggest a html table with multiple tabs
+8. Be able to click any user or book and view the info as well as perform full CRUD where applicable.(librarian superuser can perform any action and view any page, but basic card holder user can only view a subset of pages and perform limited actions)
+
 To set up React.js inside of Laravel
 
 1. `laravel new laravel-library` 
@@ -87,48 +104,7 @@ To set up React.js inside of Laravel
 3. `php artisan preset react` 
 4. `npm install && npm run dev` 
 
-To complete the assignment, you must complete the following:
-
-1. Use the [Google Books API](https://developers.google.com/books/docs/v1/getting_started) to generate book content for users to check in and out from the library
-2. Store library card holders in your local MySQL database with the following database schema:
-
-Users
-
-* user id (string) - this will be the "library card"
-* user name (string)
-* any other info you would like to store that is NOT redundant
-
-| user_id (string) | user_name (string) |
-| ---------------- | ------------------ |
-| 217bhjds8        | ianrios            |
-| 3fioy7823        | justinhall         |
-| 62hd7gd11        | nicksuch           |
-
-Books
-
-* book id (string) - linked to Google Book API Book ID so we do not actually store the book pdf in our repo
-* user id of user that currently has this book checked out (foreign key)
-* times the book has been checked out (integer)
-* any other info you would like to store that is NOT redundant
-
-| book_id (string) | user_id (foreign key) | number_of_times_checked_out (int) |
-| ---------------- | --------------------- | --------------------------------- |
-| iui4vdsua        | 217bhjds8             | 1                                 |
-| 876b3ksyn        | 217bhjds8             | 10                                |
-| 16fkc44c4        | 62hd7gd11             | 7                                 |
-| qyjdi7sje        | 217bhjds8             | 4                                 |
-| tzbckg83n        | 62hd7gd11             | 1                                 |
-| 08hkudtbj        | 62hd7gd11             | 2                                 |
-| 235jc7782        | 62hd7gd11             | 3                                 |
-| 1uuid78h3        | null                  | 4                                 |
-
-3. Full CRUD operations should be available for `Users` 
-4. Read access should be available for `Books` (it is not possible to perform Create, Update, or Delete functions on the Google Books API) via GET requests
-5. Only save the books in the book table AFTER a user decides to check the book out. (no need to save all the books locally, that's what the API is for)
-6. Use React.js for creating components to put on Laravel Blades.
-7. Users do not need to be real people, this can be simulated by you by clicking a "new user" button in the admin interface as a Librarian. (think 'library simulator')
-8. Show all user and book statistics that are saved in database (for example: There are 3 users registered with the library, user "bob" has 2 books checked out: "Algorithms", and "Design Patterns", user "phil" has 0 books checked out, and user "sally" has 1 book checked out: "The Pragmatic Programmer") you can format this data however you'd like, we suggest a table with multiple tabs
-9. Be able to click any user or book and view the info as well as perform full CRUD where applicable.
+**Do not begin using React.js until you have successfully completed the project. This is a back end project; it does not need to look pretty, it needs to work.**
 
 #### Additional Requirements
 
@@ -143,6 +119,7 @@ Books
 
 * Create backend archetecture wireframes for use in a potential MVP
 * Create a search bar for querying books from the Google Books API
+* [Use react.js for all front end](https://dev.to/lvtdeveloper/using-react-in-a-laravel-application-8fp)
 * Implement Laravel Auth using composer to create many "Librarians"
 * Add a 'due by date' that keeps track of how long a book has been checked out
 * Add a 'late fee' for books that have been checked out too long that can be modified by the librarian
@@ -150,6 +127,7 @@ Books
 * Add a way for users to put a book on hold if someone else has it currently checked out
 * Add a history for the librarians to see a list of all people who checked out a particular book
 * Add any other data to the scheme as long as it is NOT redundant
+* Use react.js as a frontend that communicates with the Laravel library as a REST API.
 
 #### If you finish early...
 
@@ -167,4 +145,8 @@ For more information about CRUD, see these articles:
 
 * [What is CRUD?](https://www.codecademy.com/articles/what-is-crud)
 * [Why is CRUD so Important?](http://trendintech.com/2018/01/19/why-is-crud-so-important-in-computer-programming/)
+
+Using React with Laravel
+
+* [Putting React.js into Laravel](https://dev.to/lvtdeveloper/using-react-in-a-laravel-application-8fp)
 
