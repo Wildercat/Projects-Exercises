@@ -28,7 +28,10 @@ For this project we will be using React.js to create components on the front end
 
 ### MVP
 
-By default, the clone app should replicate the design and functionality of the real app front end as closely as possible. The back end is required to pull from the book api and generate/store data and maintain users, data, and state.
+By default, the clone app should replicate the design and functionality of the real app front end as closely as possible. The back end is required to pull from the mySQL server as an API and generate/store data and maintain users, data, and state.
+
+It *is* possible to [put React.js directly on a blade](https://dev.to/lvtdeveloper/using-react-in-a-laravel-application-8fp), but this type of archetecture is known as [RESTless, or SOAP](https://pediaa.com/what-is-the-difference-between-restful-and-restless-web-service/#:~:targetText=The%20main%20difference%20between%20RESTful,does%20not%20follow%20RESTful%20principles.&targetText=Moreover%2C%20a%20web%20service%20is%20platform%20independent.), which is more resource intensive and would now be considered a poor practice in comparison. You can experiment with a RESTless web server in the [Laravel Library](https://github.com/bootcamp-students/Projects-Exercises/blob/master/docs/projects/laravel-library.md)
+
 
 #### Wireframe
 
