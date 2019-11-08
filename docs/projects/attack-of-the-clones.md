@@ -9,24 +9,22 @@ For this project we will be using React.js to create components on the front end
 ### Table of contents
 
 <!--ts-->
-
 * [Project/Exercise Name](#Attack-of-the-Clones)
 * [Description](#Description)
 * [Table of Contents](#table-of-contents)
 * [MVP (Minimum Viable Product)](#MVP)
-  + [Wireframe](#Wireframe)
-  + [Tech Stack](#Tech-Stack)
+  - [Wireframe](#Wireframe)
+  - [Tech Stack](#Tech-Stack)
 * [Process](#process)
-  + [Setup](#Setup)
-  + [Application File Structure](#Application-File-Structure)
-  + [Develop](#Develop)
-  + [Deploy](#Deploy)
+  - [Setup](#Setup)
+  - [Application File Structure](#Application-File-Structure)
+  - [Develop](#Develop)
+  - [Deploy](#Deploy)
 * [Requirements](#Requirements)
-  + [Additional Requirements](#Additional-Requirements)
-  + [Stretch Goals](#Stretch-Goals)
+  - [Additional Requirements](#Additional-Requirements)
+  - [Stretch Goals](#Stretch-Goals)
 * [Additional Resources](#Additional-Resources)
-
-  <!--te-->
+<!--te-->
 
 ### MVP
 
@@ -34,17 +32,18 @@ By default, the clone app should replicate the design and functionality of the r
 
 #### Wireframe
 
-* [Gmail wireframe](https://mail.google.com/mail/u/0/)
 * [Twitter wireframe](https://twitter.com/awesome_inc)
-* [Slack wireframe](https://app.slack.com/client/TKV4DCHDH/CL8LDQGTY)
+* [Gmail wireframe](https://mail.google.com/mail/u/0/)
 * [Trello wireframe](https://trello.com/b/0Bn39pyt/bootcamp-f19)
-* Or choose your own! (tell us first so we can approve it)
+* [Slack/Discord wireframe](https://app.slack.com/client/TKV4DCHDH/CL8LDQGTY)
+* Or choose your own! (must be approved by us first)
 
 #### Tech Stack
 
 1. React.JS
-2. Laravel
-3. MySQL
+2. MySQL
+3. Laravel
+
 
 ### Process
 
