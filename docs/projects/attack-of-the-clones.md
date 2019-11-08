@@ -82,7 +82,7 @@ To complete the assignment, you must complete the following:
 
 1. In your sites folder, create a new folder called "clone-project"
 2. `cd clone-project` 
-3. You will create two seperate projects, this is what is known as a [RESTful API](https://restfulapi.net/)
+3. You will create two separate projects, this is what is known as a [RESTful API](https://restfulapi.net/)
 4. `npx create-react-app react-ui` 
 5. `laravel new laravel-api` 
 
