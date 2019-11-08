@@ -28,7 +28,7 @@ For this project we will be using React.js to create components on the front end
 
 ### MVP
 
-By default, the clone app should replicate the design and functionality of the real app front end as closely as possible. The back end is required to pull from the book api and generate/store data and maintain users and books
+By default, the clone app should replicate the design and functionality of the real app front end as closely as possible. The back end is required to pull from the book api and generate/store data and maintain users, data, and state.
 
 #### Wireframe
 
