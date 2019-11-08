@@ -85,10 +85,10 @@ To complete the assignment, you must complete the following:
 3. Store a table of checked out books and meta data such as date and number of times checked out as `checkouts` in your local MySQL database.
 3. Implement full CRUD operations.
 4. Implement foreign key relations to correctly store data
-5. Use React.js for creating components to put on Laravel Blades.
-6. Users do not *need* to sign up or be real people, you can simulate this by clicking a "new user" button in the admin interface as a Librarian.
-7. Show all user and book statistics that are saved in database (for example: There are 3 users registered with the library, user "jim" has 2 books checked out: "Algorithms", and "Design Patterns", user "phil" has 0 books checked out, and user "sally" has 1 book checked out: "The Pragmatic Programmer", there are 5 books in the library total, three are checked out, etc.) you can format this data however you'd like, we suggest a html table with multiple tabs
-8. Be able to click any user or book and view the info as well as perform full CRUD where applicable.(librarian superuser can perform any action and view any page, but basic card holder user can only view a subset of pages and perform limited actions)
+5. Users do not *need* to sign up or be real people, you can simulate this by clicking a "new user" button in the admin interface as a Librarian.
+6. Show all user and book statistics that are saved in database (for example: There are 3 users registered with the library, user "jim" has 2 books checked out: "Algorithms", and "Design Patterns", user "phil" has 0 books checked out, and user "sally" has 1 book checked out: "The Pragmatic Programmer", there are 5 books in the library total, three are checked out, etc.) you can format this data however you'd like, we suggest a html table with multiple tabs
+7. Be able to click any user or book and view the info as well as perform full CRUD where applicable.(librarian superuser can perform any action and view any page, but basic card holder user can only view a subset of pages and perform limited actions)
+8. Use React.js for creating components to put on Laravel Blades.
 
 ---
 
